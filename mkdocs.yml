@@ -4,6 +4,8 @@ site_author: Lucas Ramage
 theme:
   name: gitbook
 
+docs_dir: posts
+
 plugins: []
 
 repo_url: https://github.com/proot-me/blog.git
