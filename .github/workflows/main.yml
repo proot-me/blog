@@ -1,18 +1,40 @@
-name: Publish blog via GitHub Pages
+name: github pages
+
 on:
   push:
     branches:
-      - master
+    - master
 
 jobs:
-  build:
-    name: Deploy blog
-    runs-on: ubuntu-latest
+  build-deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
+    - uses: actions/checkout@v1
 
-      - name: Deploy docs
-        uses: oxr463/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Setup Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.6'
+        architecture: 'x64'
+
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install -r ./requirements.txt
+
+    - run: mkdocs build
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./site
