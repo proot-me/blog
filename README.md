@@ -1,4 +1,4 @@
-# PRoot Developer Blog
+# PRoot Development Blog
 
 ## License
 
