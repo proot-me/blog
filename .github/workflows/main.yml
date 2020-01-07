@@ -9,9 +9,6 @@ jobs:
     name: Deploy blog
     runs-on: ubuntu-latest
     steps:
-      - name: Install GitBook Theme
-        run: pip install mkdocs-gitbook
-
       - name: Checkout master
         uses: actions/checkout@v1
 
