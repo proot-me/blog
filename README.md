@@ -1,5 +1,7 @@
 # PRoot Development Blog
 
+Miscellaneous updates from the PRoot team.
+
 ## License
 
 [![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png)][cc-by-4.0]
