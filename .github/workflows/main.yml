@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: Publish blog via GitHub Pages
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Deploy docs
+    name: Deploy blog
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
