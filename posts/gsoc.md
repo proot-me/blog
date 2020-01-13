@@ -25,6 +25,8 @@ to the [Gentoo GSoC Project][gentoo-gsoc] about unprivileged portage running in 
 
 Finally, I have created a Google account specifically for this program, <lramage.gsoc@gmail.com>.
 
+See also: https://google.github.io/gsocguides/mentor/notes-for-first-year-organizations
+
 [gentoo-gsoc]: https://wiki.gentoo.org/wiki/Google_Summer_of_Code/2019/Ideas/Your_idea_here
 [gsoc]: https://summerofcode.withgoogle.com
 [gsoc-terms]: https://summerofcode.withgoogle.com/terms/org
