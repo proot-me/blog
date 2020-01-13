@@ -2,6 +2,8 @@
 author: Lucas Ramage
 ---
 
+# Google Summer of Code
+
 Organizations can begin submitting applications for [Google Summer of Code][gsoc] tomorrow, (01/14/2020).
 PRoot meets the minimum [requirements][gsoc-terms] for an organization,
 however, I am not sure if there are enough active developers.
