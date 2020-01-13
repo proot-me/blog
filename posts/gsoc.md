@@ -13,11 +13,18 @@ we will probably need at least two active developers in the organization in orde
 Fortunately, organization administrators can also be mentors on projects, so if I can get one other
 developer to help out then we should be set.
 
+**UPDATE**
+
+[Jonathan Passerat-Palmbach](https://github.com/jopasserat), and [Romain Reuillon](https://github.com/romainreuillon) have agreed
+to join me as part of the PRoot GSoC Organization.
+
 Here are some project ideas I had:
 
 - [Implementing libseccomp](https://github.com/proot-me/proot/issues/195)
 - [Overhauling the testsuite](https://github.com/proot-me/proot/issues/164)
 - [Performance improvements](https://github.com/proot-me/proot/issues/124)
+
+Official project list is here: https://github.com/proot-me/gsoc
 
 If they do not approve PRoot as an organization, then the next idea that I had was to submit
 project proposals to other organizations involving PRoot. Specifically, I plan to reach out
