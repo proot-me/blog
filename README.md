@@ -1,6 +1,6 @@
 # PRoot Development Blog
 
-Miscellaneous updates from the PRoot team.
+Miscellaneous updates from the [PRoot team](https://raw.githubusercontent.com/proot-me/proot/master/AUTHORS).
 
 ## License
 
