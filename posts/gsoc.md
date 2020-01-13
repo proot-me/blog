@@ -24,7 +24,7 @@ Here are some project ideas I had:
 - [Overhauling the testsuite](https://github.com/proot-me/proot/issues/164)
 - [Performance improvements](https://github.com/proot-me/proot/issues/124)
 
-Official project list is here: https://github.com/proot-me/gsoc
+Official project list is here: <https://github.com/proot-me/gsoc>.
 
 If they do not approve PRoot as an organization, then the next idea that I had was to submit
 project proposals to other organizations involving PRoot. Specifically, I plan to reach out
