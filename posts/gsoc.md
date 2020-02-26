@@ -13,8 +13,6 @@ we will probably need at least two active developers in the organization in orde
 Fortunately, organization administrators can also be mentors on projects, so if I can get one other
 developer to help out then we should be set.
 
-**UPDATE**
-
 [Jonathan Passerat-Palmbach](https://github.com/jopasserat), and [Romain Reuillon](https://github.com/romainreuillon) have agreed
 to join me as part of the PRoot GSoC Organization.
 
@@ -33,6 +31,10 @@ to the [Gentoo GSoC Project][gentoo-gsoc] about unprivileged portage running in 
 Finally, I have created a Google account specifically for this program, <lramage.gsoc@gmail.com>.
 
 See also: https://google.github.io/gsocguides/mentor/notes-for-first-year-organizations
+
+**UPDATE**
+
+Unfortunately, PRoot was not accepted as an organization this year; but we will try again next year!
 
 [gentoo-gsoc]: https://wiki.gentoo.org/wiki/Google_Summer_of_Code/2019/Ideas/Your_idea_here
 [gsoc]: https://summerofcode.withgoogle.com
