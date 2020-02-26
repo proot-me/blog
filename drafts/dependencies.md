@@ -1,30 +1,10 @@
 # Dependencies
 
-| Alpine                            | CentOS                       | Debian                           |
-| --------------------------------- | ---------------------------- | ---------------------------------|
-| bsd-compat-headers                |                              |                                  |
-| bash                              |                              |                                  |
-| clang                             | clang                        | clang                            |
-| clang-analyzer                    |                              | clang-tools-4.0                  |
-| coreutils                         |                              |                                  |
-|                                   |                              | curl                             |
-| gcc                               |                              | gcc                              |
-|                                   |                              | gdb                              |
-| git                               | git                          | git                              |
-| grep                              |                              |                                  |
-|                                   |                              | lcov                             |
-| libarchive-dev                    | libarchive-devel             | libarchive-dev                   |
-| linux-headers                     |                              |                                  |
-| lzo                               |                              |                                  |
-| make                              |                              | make                             |
-| mcookie                           |                              |                                  |
-| musl-dev                          |                              |                                  |
-| python2-dev                       | python-devel                 |                                  |
-|                                   |                              | sloccount                        |
-|                                   | strace                       | strace                           |
-| swig                              | swig                         | swig                             |
-| talloc-dev                        | libtalloc-devel              | libtalloc-dev                    |
-| uthash-dev                        | uthash-devel                 | uthash-dev                       |
+| Distribution |                    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ------------ | ------------------ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| Alpine       | bsd-compat-headers | bash | clang | clang-analyzer  | coreutils |      | gcc |     | git | grep |      | libarchive-dev   | linux-headers | lzo | make | mcookie | musl-dev | python2-dev  |           |        | swig | talloc-dev | uthash-dev |
+| CentOS       |                    |      | clang |                 |           |      |     |     | git |      |      | libarchive-devel |               |     |      |         |          | python-devel |           | strace | swig | libtalloc-devel | uthash-devel |
+| Debian       |                    |      | clang | clang-tools-4.0 |           | curl | gcc | gdb | git |      | lcov | libarchive-dev   |               |     | make |         |          |              | sloccount | strace | swig | libtalloc-dev | uthash-dev |
 
 [alpine-ref]: https://alpinelinux.org
 [centos-ref]: https://centos.org
