@@ -1,6 +1,6 @@
 # Dependencies
 
-| [Alpine][alpine-ref]              | [CentOS][centos-ref]         | [Debian][debian-ref] |
+| Alpine                            | CentOS                       | Debian                           |
 | --------------------------------- | ---------------------------- | ---------------------------------|
 | bsd-compat-headers                |                              |                                  |
 | bash                              |                              |                                  |
