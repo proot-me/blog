@@ -2,11 +2,11 @@
 
 ## Distributions
 
-| Distribution | Release | Version     |
-| ------------ | ------- | ----------- |
-| Alpine       | 3.10    | 4.19.53     |
-| CentOS       | 7       | 3.10.0-1062 |
-| Debian       | 9.12    | 4.9.210-1   |
+| Distribution | Release | Kernel Version |
+| ------------ | ------- | -------------- |
+| Alpine       | 3.10    | 4.19.53        |
+| CentOS       | 7       | 3.10.0-1062    |
+| Debian       | 9.12    | 4.9.210-1      |
 
 ## Packages
 
