@@ -1,3 +1,8 @@
+---
+author: Lucas Ramage
+repository: https://github.com/proot-me/proot-static-build
+---
+
 # proot-static-build
 
 _Build static variants of PRoot_
