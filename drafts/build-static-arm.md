@@ -4,9 +4,7 @@ date: 2020-02-27
 repository: https://github.com/proot-me/proot-static-build
 ---
 
-# Building Static PRoot Binaries
-
-_Build static variants of PRoot across all architectures_
+# Building Static PRoot Binaries for ARM
 
 **Note: This article is based on the archived proot-static-build repository**
 
