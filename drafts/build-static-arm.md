@@ -10,9 +10,9 @@ _Build static variants of PRoot across all architectures_
 
 **Note: This article is based on the archived proot-static-build repository**
 
-> The ARM one was built on x86_64 using this command:
+The ARM one was built on x86_64 using this command:
 
-> ```sh
+```sh
 # Build PRoot/ARM statically: 
 cd ~/git/proot-static-build 
 mkdir build-arm 
@@ -20,9 +20,9 @@ cd build-arm
 proot -R ~/rootfs/slackwarearm-14.1 -b $(which cmake) -q qemu-arm make glibc-version=glibc-2.18 -f ../GNUmakefile proot -j4 
 ```
 
-> Where slackwarearm-14.1 was created this way:
+Where slackwarearm-14.1 was created this way:
 
-> ```sh
+```sh
 # Get Slackware/ARM packages: 
 wget -r -np http://ftp.arm.slackware.com/slackwarearm/slackwarearm-14.1/slackware/{a,ap,d,e,l,n,tcl}/ 
 mkdir ~/rootfs/slackwarearm-14.1 
