@@ -1,2 +1,3 @@
 mkdocs
 mkdocs-gitbook
+mkdocs-autolinks-plugin
