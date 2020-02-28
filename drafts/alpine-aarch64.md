@@ -18,25 +18,24 @@ cd ..
 cp /etc/resolv.conf alpine/etc/
 
 # Fetching dependencies
-proot -q qemu-aarch64 -S alpine/ /bin/sh
-apk add bash \
-                  bsd-compat-headers \
-                  clang \
-                  clang-analyzer \
-                  coreutils \
-                  gcc \
-                  git \
-                  grep \
-                  libarchive-dev \
-                  linux-headers \
-                  lzo \
-                  make \
-                  mcookie \
-                  musl-dev \
-                  python2-dev \
-                  swig \
-                  talloc-dev \
-                  uthash-dev
+proot -q qemu-aarch64 -S alpine/ /sbin/apk add bash \
+                                               bsd-compat-headers \
+                                               clang \
+                                               clang-analyzer \
+                                               coreutils \
+                                               gcc \
+                                               git \
+                                               grep \
+                                               libarchive-dev \
+                                               linux-headers \
+                                               lzo \
+                                               make \
+                                               mcookie \
+                                               musl-dev \
+                                               python2-dev \
+                                               swig \
+                                               talloc-dev \
+                                               uthash-dev
 
 make -C src loader.elf build.h
 LDCONFIG="${LDCONFIG} -static" make -C src proot
