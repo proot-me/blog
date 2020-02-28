@@ -38,4 +38,4 @@ devuan:/$ apk add bash \
                   uthash-dev
 ```
 
-**Note: these packages are listed in the Dependencies article.**
+**Note: these packages are listed in the [Dependencies](../posts/dependencies.md) article.**
