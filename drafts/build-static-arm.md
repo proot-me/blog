@@ -2,9 +2,12 @@
 author: corbinlc <corbinlc@gmail.com>
 date: 2015-07-17
 repository: https://github.com/proot-me/proot-static-build
+architecture: arm
+distribution: slackware
+distribution_version: 14.1
 ---
 
-# Building Static PRoot Binaries for ARM
+# Building Static PRoot Binaries for ARM using Slackware 14.1
 
 **Note: This article was taken from the archived proot-static-build repository's README.md file**
 
