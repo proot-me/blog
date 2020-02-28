@@ -13,6 +13,9 @@ wget http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/aarch64/alpine-miniroot
 tar -xf alpine-minirootfs-3.11.3-aarch64.tar.gz
 cd ..
 
+# Configure DNS resolution
+cp /etc/resolv.conf alpine/etc/
+
 # Fetching dependencies
 proot -q qemu-aarch64 -r alpine/ /bin/sh
 proot warning: can't chdir("/home/lramage/tmp/./.") in the guest rootfs: No such file or directory
