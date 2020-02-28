@@ -1,9 +1,14 @@
 ---
 author: Lucas Ramage
 date: 2020-02-27
+architecture: aarch64
+distribution: alpine
+distribution_version: 3.11.3
 ---
 
-# Static PRoot for AArch64 using Alpine Linux
+# Static binaries for AArch64 using Alpine Linux
+
+Regarding [Static binaries for ARM using Slackware](slackware-arm.md),
 
 > I have tried to build it using slackware, but it seems to be for arm32 instead of 64. Furthermore there are some errors with reg.c file - missing members of structures mainly. I have even tried to build it in termux, but this resolves in "No rule to make target ".check_process_vm.o". I got the idea of building it using android toolchains, but I guess that wont work either, since proot is detecting the architecture it is built on. What would you suggest?
 > --<cite>@MarekPetr</cite>
