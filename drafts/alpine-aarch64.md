@@ -5,6 +5,8 @@ date: 2020-02-27
 
 # Static PRoot for AArch64 using Alpine Linux
 
+## Compiling
+
 ```sh
 # Extract aarch64 rootfs
 mkdir alpine
