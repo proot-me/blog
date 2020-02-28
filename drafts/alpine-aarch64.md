@@ -56,7 +56,7 @@ proot -q qemu-aarch64 \
 
 # Compile static proot
 proot -q qemu-aarch64 \
-      -S alpine/ LDCONFIG="${LDCONFIG} -static" make -C /usr/src/proot/src proot
+      -S alpine/ /bin/sh -c 'LDCONFIG="${LDCONFIG} -static" make -C /usr/src/proot/src proot'
 
 cp alpine/usr/src/proot/src/proot .
 file proot
