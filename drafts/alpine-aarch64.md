@@ -52,7 +52,7 @@ git clone https://github.com/proot-me/proot.git alpine/usr/src/proot
 ```sh
 # Compile loader
 proot -q qemu-aarch64 \
-      -S alpine/ make -C /usr/src/proot/src loader.elf build.h
+      -S alpine/ /bin/sh -c 'LDCONFIG="${LDCONFIG} -static" make -C /usr/src/proot/src loader.elf build.h'
 
 # Compile static proot
 proot -q qemu-aarch64 \
