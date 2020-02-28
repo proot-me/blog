@@ -7,7 +7,7 @@ distribution: slackware
 distribution_version: 14.1
 ---
 
-# Static Binaries for ARM using Slackware
+# Static binaries for ARM using Slackware
 
 **Note: This article was taken from the archived proot-static-build repository's README.md file**
 
