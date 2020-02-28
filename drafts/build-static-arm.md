@@ -6,7 +6,7 @@ repository: https://github.com/proot-me/proot-static-build
 
 # Building Static PRoot Binaries for ARM
 
-**Note: This article was taken from the archived proot-static-build repository's README**
+**Note: This article was taken from the archived proot-static-build repository's README.md file.**
 
 The ARM one was built on x86_64 using this command:
 
