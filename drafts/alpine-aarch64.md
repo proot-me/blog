@@ -15,22 +15,27 @@ cd ..
 
 # Fetching dependencies
 proot -q qemu-aarch64 -r alpine/ /bin/sh
-apk add bash \
-        bsd-compat-headers \
-        clang \
-        clang-analyzer \
-        coreutils \
-        gcc \
-        git \
-        grep \
-        libarchive-dev \
-        linux-headers \
-        lzo \
-        make \
-        mcookie \
-        musl-dev \
-        python2-dev \
-        swig \
-        talloc-dev \
-        uthash-dev
+proot warning: can't chdir("/home/lramage/tmp/./.") in the guest rootfs: No such file or directory
+proot info: default working directory is now "/"
+/ $ . /etc/profile
+devuan:/$ apk add bash \
+                  bsd-compat-headers \
+                  clang \
+                  clang-analyzer \
+                  coreutils \
+                  gcc \
+                  git \
+                  grep \
+                  libarchive-dev \
+                  linux-headers \
+                  lzo \
+                  make \
+                  mcookie \
+                  musl-dev \
+                  python2-dev \
+                  swig \
+                  talloc-dev \
+                  uthash-dev
 ```
+
+**Note: these packages are listed in the Dependencies article.**
