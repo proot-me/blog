@@ -1,6 +1,6 @@
 ---
-author: Lucas Ramage
-date: 2020-02-27
+author: corbinlc <corbinlc@gmail.com>
+date: 2015-07-17
 repository: https://github.com/proot-me/proot-static-build
 ---
 
