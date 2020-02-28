@@ -17,11 +17,8 @@ cd ..
 cp /etc/resolv.conf alpine/etc/
 
 # Fetching dependencies
-proot -q qemu-aarch64 -r alpine/ /bin/sh
-proot warning: can't chdir("/home/lramage/tmp/./.") in the guest rootfs: No such file or directory
-proot info: default working directory is now "/"
-/ $ . /etc/profile
-devuan:/$ apk add bash \
+proot -q qemu-aarch64 -S alpine/ /bin/sh
+apk add bash \
                   bsd-compat-headers \
                   clang \
                   clang-analyzer \
@@ -39,6 +36,9 @@ devuan:/$ apk add bash \
                   swig \
                   talloc-dev \
                   uthash-dev
+
+make -C src loader.elf build.h
+LDCONFIG="${LDCONFIG} -static" make -C src proot
 ```
 
 **Note: these packages are listed in the [Dependencies](../posts/dependencies.md) article.**
