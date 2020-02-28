@@ -6,6 +6,7 @@ theme:
 
 docs_dir: posts
 
-plugins: []
+plugins:
+  - autolinks
 
 repo_url: https://github.com/proot-me/blog.git
