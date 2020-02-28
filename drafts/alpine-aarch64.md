@@ -11,6 +11,7 @@ mkdir alpine
 cd alpine
 wget http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/aarch64/alpine-minirootfs-3.11.3-aarch64.tar.gz
 tar -xf alpine-minirootfs-3.11.3-aarch64.tar.gz
+rm alpine-minirootfs-3.11.3-aarch64.tar.gz
 cd ..
 
 # Configure DNS resolution
