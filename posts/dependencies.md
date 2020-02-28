@@ -10,7 +10,7 @@
 
 ## Packages
 
-<!--<div style="overflow: auto">-->
+<span style="overflow: auto">
 
 | Distribution |                    |      |       |                  |          |      |     |     |     |      |      |                  |               |     |      |         |          |              |           |        |      |                   |            |
 | ------------ | ------------------ | ---- | ----- | ---------------- | -------- | ---- | --- | --- | --- | ---- | ---- | ---------------- | ------------- | --- | ---- | ------- | -------- | ------------ | --------- | ------ | ---- | --------------- | -------- |
@@ -18,7 +18,7 @@
 | CentOS       | *                  | *    | clang |                 | *         | *    | *   |     | git | *    |      | libarchive-devel | *             |     | *    |         | **       | python-devel |           | strace | swig | libtalloc-devel | uthash-devel |
 | Debian       | *                  | *    | clang | clang-tools-4.0 | *         | curl | gcc | gdb | git | *    | lcov | libarchive-dev   | *             |     | make |         |          |              | sloccount | strace | swig | libtalloc-dev | uthash-dev |
 
-<!--</div>-->
+</span>
 
 [alpine-ref]: https://alpinelinux.org
 [centos-ref]: https://centos.org
