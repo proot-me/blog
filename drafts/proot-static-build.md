@@ -1,5 +1,6 @@
 ---
 author: Lucas Ramage
+date: 2020-02-27
 repository: https://github.com/proot-me/proot-static-build
 ---
 
