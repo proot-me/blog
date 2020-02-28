@@ -37,7 +37,19 @@ proot -q qemu-aarch64 \
                                swig \
                                talloc-dev \
                                uthash-dev
+```
 
+**Note: these packages are listed in the [Dependencies](../posts/dependencies.md) article.**
+
+```
+# Clone proot repository to rootfs
+mkdir -p alpine/usr/src/
+git clone https://github.com/proot-me/proot.git alpine/usr/src/proot
+```
+
+**Note: this step was performed from the host, not from within the Alpine rootfs**
+
+```sh
 # Compile loader
 proot -q qemu-aarch64 \
       -S alpine/ make -C src loader.elf build.h
@@ -46,5 +58,3 @@ proot -q qemu-aarch64 \
 proot -q qemu-aarch64 \
       -S alpine/ LDCONFIG="${LDCONFIG} -static" make -C src proot
 ```
-
-**Note: these packages are listed in the [Dependencies](../posts/dependencies.md) article.**
