@@ -46,6 +46,7 @@ proot -q qemu-aarch64 \
                                python2-dev \
                                swig \
                                talloc-dev \
+                               talloc-static \
                                uthash-dev
 ```
 
@@ -75,10 +76,8 @@ file proot
 ## Troubleshooting
 
 ```sh
-/usr/lib/gcc/aarch64-alpine-linux-musl/9.2.0/../../../../aarch64-alpine-linux-musl/bin/ld: cannot find -ltalloc
 /usr/lib/gcc/aarch64-alpine-linux-musl/9.2.0/../../../../aarch64-alpine-linux-musl/bin/ld: cannot find -lpython2.7
 
-ld -ltalloc --verbose
 ld -lpython2.7 --verbose
 ```
 
