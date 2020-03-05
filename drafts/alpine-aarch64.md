@@ -63,24 +63,17 @@ git clone https://github.com/proot-me/proot.git alpine/usr/src/proot
 ```sh
 # Compile loader
 proot -q qemu-aarch64 \
-      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static" make -C /usr/src/proot/src loader.elf build.h'
+      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static -L/usr/lib/python2.7/config/" make -C /usr/src/proot/src loader.elf build.h'
 
 # Compile static proot
 proot -q qemu-aarch64 \
-      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static" make -C /usr/src/proot/src proot'
+      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static -L/usr/lib/python2.7/config/" make -C /usr/src/proot/src proot'
 
 cp alpine/usr/src/proot/src/proot .
 file proot
 ```
 
-## Troubleshooting
-
-```sh
-/usr/lib/gcc/aarch64-alpine-linux-musl/9.2.0/../../../../aarch64-alpine-linux-musl/bin/ld: cannot find -lpython2.7
-
-ld -lpython2.7 --verbose
-```
-
 ### References
 
 - https://stackoverflow.com/a/21647591/8507637
+- https://gitlab.alpinelinux.org/alpine/aports/issues/11269
