@@ -75,5 +75,5 @@ file proot
 
 ### References
 
-- https://stackoverflow.com/a/21647591/8507637
-- https://gitlab.alpinelinux.org/alpine/aports/issues/11269
+- <https://stackoverflow.com/a/21647591/8507637>
+- <https://gitlab.alpinelinux.org/alpine/aports/issues/11269>
