@@ -21,7 +21,7 @@ Unfortunately, that never happened...
 Let's face it, [everyone is busy](https://vcwithme.co/2020/02/06/everyone-is-busy). I get it.
 But it's hard for potential new contributors to get on board with our project if it looks dead!
 
-So let's [just do it](https://en.wikipedia.org/wiki/Just_Do_It).
+So let's [just do it](https://en.wikipedia.org/wiki/Just_Do_It). Here we go.
 
 ## Maintainership Transition
 
