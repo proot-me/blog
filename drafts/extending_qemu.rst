@@ -78,7 +78,7 @@ of the control of QEMU.  As a conclusion R2 is not supported either.
 
 .. |Q1P1| replace:: Q1\ :sub:`P1`
 
-.. figure:: extending_qemu-fig1.svg
+.. figure:: ../assets/img/extending_qemu-fig1.svg
 
    Figure 1: Guest process[es] running under QEMU, arrows are system calls flow
 
@@ -102,7 +102,7 @@ new process about to be created, it can change the initial request and
 get a new instance of QEMU running the new process (R2) as shown in
 Figure 1 (c).
 
-.. figure:: extending_qemu-fig2.svg
+.. figure:: ../assets/img/extending_qemu-fig2.svg
 
    Figure 2: Control flow of a syscall done by a guest process under QEMU+PRoot
 
