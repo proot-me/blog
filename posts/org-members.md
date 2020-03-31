@@ -1,5 +1,6 @@
 ---
 author: Lucas Ramage
+date: 2019-01-13
 ---
 
 # Removing Inactive Members
