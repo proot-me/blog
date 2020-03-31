@@ -31,7 +31,7 @@ After that, his involvment continually decreased and eventually stopped.
 
 A few years later (November 3, 2016), a group of developers stepped up to maintain the project, (See: [https://github.com/proot-me/proot/issues/106](https://web.archive.org/web/20200331144358/https://github.com/proot-me/proot/issues/106)).
 
-Unfortunately, none of these developers are still active, (See: [Removing Inactive Members](../posts/org-members.md)).
+Unfortunately, none of these developers are still active, (See: [Removing Inactive Members](org-members.md)).
 
 ## Recent Improvements
 
