@@ -21,4 +21,4 @@ If you aren't familiar with [shellcheck](https://www.shellcheck.net), then I hig
 
 You can run the testsuite with `V=1` for verbose. That really helps, but it is very verbose.
 
-See also: https://github.com/proot-me/proot/issues/164
+See also: [Meaningful names for tests](https://github.com/proot-me/proot/issues/164)
