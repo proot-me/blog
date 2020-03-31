@@ -39,7 +39,7 @@ In the last year or so we have made the following improvements:
 
 - [Core Infrastructure Initiative (CII) Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/2444)
 - [GitLab CI/CD Pipelines for builds](https://gitlab.com/proot/proot)
-- <s>[Google Summer of Code](https://github.com/proot-me/blog/issues/3)</s>
+- <s>[Google Summer of Code](https://github.com/proot-me/blog/issues/3) (rejected)</s>
 - [Package for Alpine Linux](https://git.alpinelinux.org/aports/commit/?id=e5bc64161b3a4b079fa324bcb3a52e2303d17c08)
 - [Package for Void Linux](https://github.com/proot-me/proot/commit/037e77ef796cf4f10e170007a9929bdc400ca3de)
 - [Python Extension](https://github.com/proot-me/proot/pull/82)
