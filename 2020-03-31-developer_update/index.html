@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>March 2020 - Developer Update - PRoot Development Blog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="generator" content="mkdocs-1.1, mkdocs-gitbook-1.0.7">
+<meta name="author" content="Lucas Ramage">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../css/style.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href=".." target="_blank" class="custom-link">PRoot Development Blog</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="..">Welcome to our new blog</a>
+<li class="chapter active" data-path="2020-03-31-developer_update/">
+<a href="./">March 2020 - Developer Update</a>
+<li class="chapter" data-path="alpine-aarch64/">
+<a href="../alpine-aarch64/">Static binaries for AArch64 using Alpine Linux</a>
+<li class="chapter" data-path="dependencies/">
+<a href="../dependencies/">Dependencies</a>
+<li class="chapter" data-path="gsoc/">
+<a href="../gsoc/">Google Summer of Code</a>
+<li class="chapter" data-path="org-members/">
+<a href="../org-members/">Removing Inactive Members</a>
+<li class="chapter" data-path="slackware-arm/">
+<a href="../slackware-arm/">Static binaries for ARM using Slackware</a>
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="march-2020-developer-update">March 2020 - Developer Update</h1>
+<p><strong>TL;DR: We're working on it!</strong></p>
+<h2 id="introduction">Introduction</h2>
+<p>Last January, I created an issue the following issue:</p>
+<blockquote>
+<h1 id="publish-proot-care-development-status-update-2">Publish PRoot / Care Development Status Update #2</h1>
+<p>I think it would be ideal to create a blog post describing the current 
+state of PRoot i.e. the transition of maintainership from the original author,
+and the issues faced by the current maintainers leading to the large gap since the last release.</p>
+</blockquote>
+<p>Unfortunately, that never happened...</p>
+<p>Let's face it, <a href="https://vcwithme.co/2020/02/06/everyone-is-busy">everyone is busy</a>. I get it.
+But it's hard for potential new contributors to get on board with our project if it looks dead!</p>
+<p>So let's <a href="https://en.wikipedia.org/wiki/Just_Do_It">just do it</a>. Here we go.</p>
+<h2 id="maintainership-transition">Maintainership Transition</h2>
+<p>PRoot was originally developed by <a href="https://github.com/cedric-vincent">Cedric Vincent</a> at STMicroelectronics, (See: <a href="https://github.com/proot-me/proot/blob/master/AUTHORS">AUTHORS</a>).
+He was involved up until the <a href="https://github.com/proot-me/proot/releases/tag/v5.1.0">release of v5.1.0 on December 18, 2014</a>.
+After that, his involvment continually decreased and eventually stopped.</p>
+<p>A few years later (November 3, 2016), a group of developers stepped up to maintain the project, (See: <a href="https://web.archive.org/web/20200331144358/https://github.com/proot-me/proot/issues/106">https://github.com/proot-me/proot/issues/106</a>).</p>
+<p>Unfortunately, none of these developers are still active, (See: <a href="../org-members/">Removing Inactive Members</a>).</p>
+<h2 id="recent-improvements">Recent Improvements</h2>
+<p>In the last year or so we have made the following improvements:</p>
+<ul>
+<li><a href="https://bestpractices.coreinfrastructure.org/en/projects/2444">Core Infrastructure Initiative (CII) Best Practices</a></li>
+<li><a href="https://gitlab.com/proot/proot">GitLab CI/CD Pipelines for builds</a></li>
+<li><s><a href="https://github.com/proot-me/blog/issues/3">Google Summer of Code</a> (rejected)</s></li>
+<li><a href="https://git.alpinelinux.org/aports/commit/?id=e5bc64161b3a4b079fa324bcb3a52e2303d17c08">Package for Alpine Linux</a></li>
+<li><a href="https://github.com/proot-me/proot/commit/037e77ef796cf4f10e170007a9929bdc400ca3de">Package for Void Linux</a></li>
+<li><a href="https://github.com/proot-me/proot/pull/82">Python Extension</a></li>
+<li><a href="https://github.com/proot-me/proot/commit/20d619d907e7c80dc33b884a93d0645c7ea96cc2">Rename loader binaries</a></li>
+<li><a href="https://github.com/proot-me/blog/issues/7">StackOverflow Advertisement</a></li>
+</ul>
+<h2 id="current-status">Current Status</h2>
+<p>We still have lots of work to do. Most importantly, we need to fix the <a href="https://github.com/proot-me/proot/issues/106">seccomp bug</a>,
+and also we need to <a href="https://github.com/proot-me/proot/issues/164">overhaul the testsuite</a>. I am glad to see various contributors
+submitting patches and creating issues, and I look forward to working together with everyone to maintain this project.</p>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../js/main.js"></script>
+<script src="../js/gitbook.min.js"></script>
+<script src="../js/theme.min.js"></script>
+</body>
+</html>
