@@ -1,7 +1,6 @@
 ---
 author: Lucas Ramage
 date: 2020-01-07
-issue: https://github.com/proot-me/blog/issues/8
 ---
 
 # Adding a New Test
