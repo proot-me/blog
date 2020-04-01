@@ -20,7 +20,7 @@ tar -xf rootfs.tar.gz
 rm rootfs.tar.gz
 ```
 
-**Note: these steps were adapted from the [Static binaries for AArch64 using Alpine Linux](../posts/alpine-aarch64.md#compiling) article.**
+**Note: these steps were adapted from the [Static binaries for AArch64 using Alpine Linux](alpine-aarch64.md#compiling) article.**
 
 ## Running PRoot
 
