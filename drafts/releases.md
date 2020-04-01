@@ -11,7 +11,7 @@ We need to have more frequent releases for PRoot, so that new features can be te
 
 ## Next Released Version
 
-Given that this whole [seccomp situation](https://github.com/proot-me/proot/issues/106) is a rather major change, the next version of PRoot will be of the `6.x.x` variant.
+Given that this whole [seccomp situation](https://github.com/proot-me/proot/issues/106) is a rather major change, the next version of PRoot will be of the `6.x.x` variant. I'll need to look into this a bit further, and check to see if this actually changes the public API.
 
 ### References
 
