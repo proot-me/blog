@@ -5,8 +5,7 @@ date: 2020-04-01
 
 # PRoot on iOS
 
-Since running PRoot on macOS has been requested [multiple](https://github.com/proot-me/proot/issues/81)
-[times](https://github.com/proot-me/proot/issues/155),
+Since running PRoot on macOS has been requested multiple times, (See: [#81](https://github.com/proot-me/proot/issues/81), [#155](https://github.com/proot-me/proot/issues/155));
 and since using Termux to run PRoot on Android works so wonderfully,
 I thought I would take a minute to document running it on iOS.
 
