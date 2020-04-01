@@ -5,6 +5,11 @@ date: 2020-04-01
 
 # PRoot on iOS
 
+Since running PRoot on macOS has been requested [multiple](https://github.com/proot-me/proot/issues/81)
+[times](https://github.com/proot-me/proot/issues/155),
+and since using Termux to run PRoot on Android works so wonderfully,
+I thought I would take a minute to document running it on iOS.
+
 ## Setup for Alpine Linux
 
 ```sh
@@ -42,3 +47,4 @@ See: [proot info: pid 19967: terminated with signal 31](https://github.com/proot
 
 - [Alpine Linux](https://alpinelinux.org)
 - [iSH](https://ish.app)
+- [PRoot - Termux Wiki](https://wiki.termux.com/wiki/PRoot)
