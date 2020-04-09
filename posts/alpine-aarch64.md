@@ -73,7 +73,7 @@ cp alpine/usr/src/proot/src/proot .
 file proot
 ```
 
-### References
+### Reference
 
 - <https://stackoverflow.com/a/21647591/8507637>
 - <https://gitlab.alpinelinux.org/alpine/aports/issues/11269>
