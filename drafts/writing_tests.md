@@ -18,6 +18,14 @@ This post will highlight the second option, since there are more of them in the 
 
 Note: if you take a peek at [`test/GNUmakefile`](https://github.com/proot-me/proot/blob/master/test/GNUmakefile), you will see the rules for compiling test programs; however, several of these tests names are hard-coded in this file.
 
+## Exit Codes
+
+| | |
+| - | - |
+| 0 | Pass |
+| 1 | Fail |
+| 125 | |
+
 ## Running a Single Test
 
 To run a single test, prepend `check-` to the filename of the test you wish to run.
