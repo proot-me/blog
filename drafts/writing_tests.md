@@ -20,7 +20,7 @@ Note: if you take a peek at [`test/GNUmakefile`](https://github.com/proot-me/pro
 
 ## Example Script
 
-Copy the following contents to `test/test-example.sh` file:
+Copy the following contents to the `test/test-example.sh` file:
 
 ```sh
 #!/bin/sh
