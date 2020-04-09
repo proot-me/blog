@@ -21,6 +21,8 @@ If you aren't familiar with [shellcheck](https://www.shellcheck.net), then I hig
 
 You can run the testsuite with `V=1` for verbose. That really helps, but it is very verbose.
 
+To run a single test, prepend `check-` to the filename of the test you wish to run.
+
 ```sh
 make -C test check-test-python01.sh # run single test
 ```
