@@ -66,6 +66,7 @@ Per the [release guide](https://github.com/proot-me/proot/blob/master/doc/howto-
 
 ### Reference
 
+- [Appendix E. Exit Codes With Special Meanings](http://tldp.org/LDP/abs/html/exitcodes.html)
 - [shellcheck](https://www.shellcheck.net)
 
 ### See Also
