@@ -20,11 +20,13 @@ Note: if you take a peek at [`test/GNUmakefile`](https://github.com/proot-me/pro
 
 ## Exit Codes
 
-| | |
-| - | - |
-| 0 | Pass |
-| 1 | Fail |
-| 125 | |
+| Code | Status  |
+|------|---------|
+| 0    | ok      |
+| 125  | skipped |
+| *    | FAILED  |
+
+Note: these are defined in [`test/GNUmakefile`](https://github.com/proot-me/proot/blob/master/test/GNUmakefile#L91).
 
 ## Running a Single Test
 
