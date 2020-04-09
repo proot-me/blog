@@ -26,8 +26,31 @@ make -C test check-test-python01.sh # run single test
 
 ## Example
 
+```sh
+#!/bin/sh
+# Test description here
+set -eu
+
+# Check for test dependencies
+for cmd in file; do
+  if ! command -v "${cmd}" > /dev/null; then
+      exit 125
+  fi
+done
+
+# Check for PRoot binary
+if [ ! -e "${PROOT}" ]; then
+    exit 125
+fi
+
+# Explicitly define test case here
+if [ $(file "${PROOT}" ]; then
+    exit 1
+fi
+```
+
 Recently, [`test/test-python01.sh`](https://github.com/proot-me/proot/blob/master/test/test-python01.sh) was added
-to test the new Python extension. This is a proper example of a test script.
+to test the new Python extension. It can be used as a reference for writing a new test script.
 
 ## Troubleshooting
 
