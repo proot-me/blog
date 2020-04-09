@@ -53,6 +53,8 @@ To run a single test, prepend `check-` to the filename of the test you wish to r
 make -C test check-test-example.sh # run single test
 ```
 
+[![asciicast](https://asciinema.org/a/318232.svg)](https://asciinema.org/a/318232)
+
 ## Running Entire Testsuite
 
 ```sh
@@ -76,6 +78,8 @@ The testsuite can be run with `V=1` for more verbose output.
 ```sh
 make -C test check-test-example.sh V=1
 ```
+
+[![asciicast](https://asciinema.org/a/318233.svg)](https://asciinema.org/a/318233)
 
 ## Test Requirements
 
