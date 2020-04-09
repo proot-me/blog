@@ -3,7 +3,7 @@ author: Lucas Ramage
 date: 2020-01-07
 ---
 
-# Adding a New Test
+# Writing Tests for PRoot / CARE
 
 The testsuite needs lots of love, but for now, here are some steps to add a new test.
 
