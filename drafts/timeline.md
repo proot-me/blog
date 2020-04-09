@@ -13,4 +13,4 @@ date: 2019-01-09
 
 **Oct. 1, 2017** - New release requested, (See: proot-me/proot#127).
 
-**Nov. 8, 2018** - New maintainer, (See: https://github.com/proot-me/proot/issues/120#issuecomment-437127451).
+**Nov. 8, 2018** - New maintainer, (See: [proot-me/proot#120](https://github.com/proot-me/proot/issues/120#issuecomment-437127451)).
