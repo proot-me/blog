@@ -9,9 +9,13 @@ issue: https://github.com/proot-me/proot/issues/127
 The last release [v5.1.0](https://github.com/proot-me/proot/releases/tag/v5.1.0) was from December 15, 2014, (See: [Timeline](timeline.md)).
 We need to have more frequent releases for PRoot, so that new features can be tested.
 
-## Next Released Version
+## Next Major Release
 
 Given that this whole [seccomp situation](https://github.com/proot-me/proot/issues/106) is a rather major change, the next version of PRoot will be of the `6.x.x` variant. I'll need to look into this a bit further, and check to see if this actually changes the public API.
+
+## Pre-Releases
+
+It would be good to publish pre-releases so that users can test any new features or changes.
 
 ### References
 
