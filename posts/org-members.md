@@ -12,4 +12,4 @@ back then just let me know and I can add you back.
 
 Thanks,
 
-[@oxr463](https://github.com/oxr463)
+[Lucas Ramage](https://github.com/oxr463)
