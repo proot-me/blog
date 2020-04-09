@@ -7,7 +7,7 @@ date: 2019-01-09
 
 **Dec. 15, 2014** - Latest release, `v5.1.0`, by [Cedric Vincent](#), (See: `git checkout tags/v5.1.0; git log -n1`).
 
-**Nov. 3, 2016** - New maintainers step up to continue development of PRoot, (See: proot-me/proot#106).
+**Nov. 3, 2016** - New maintainers step up to continue development of PRoot, (See: [proot-me/proot#106](https://github.com/proot-me/proot/issues/106)).
 
 **Jun. 16, 2017** - Development stagnates due to frozen PRs, (See: [proot-me/proot#122](https://github.com/proot-me/proot/issues/122)).
 
