@@ -27,4 +27,6 @@ To run a single test, prepend `check-` to the filename of the test you wish to r
 make -C test check-test-python01.sh # run single test
 ```
 
-See also: [Meaningful names for tests](https://github.com/proot-me/proot/issues/164)
+### See Also
+
+- [Meaningful names for tests](https://github.com/proot-me/proot/issues/164)
