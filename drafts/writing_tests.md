@@ -5,7 +5,7 @@ date: 2020-01-07
 
 # Writing Tests for PRoot / CARE
 
-Here are the steps required for adding a new test.
+Here are the steps required for adding a new test script.
 
 ## Test Types
 
@@ -14,7 +14,9 @@ There are more than one type of test:
 - test programs written in C
 - POSIX shell scripts
 
-Note: if you take a peek at [`test/GNUmakefile`](https://github.com/proot-me/proot/blob/master/test/GNUmakefile), you will see some tests are hard-coded in there for some reason.
+This post will highlight the second option, since there are more of them in the testsuite currently.
+
+Note: if you take a peek at [`test/GNUmakefile`](https://github.com/proot-me/proot/blob/master/test/GNUmakefile), you will see the rules for compiling test programs; however, several of these tests names are hard-coded in this file.
 
 ## Running a Single Test
 
