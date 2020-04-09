@@ -18,25 +18,9 @@ This post will highlight the second option, since there are more of them in the 
 
 Note: if you take a peek at [`test/GNUmakefile`](https://github.com/proot-me/proot/blob/master/test/GNUmakefile), you will see the rules for compiling test programs; however, several of these tests names are hard-coded in this file.
 
-## Exit Codes
+## Example Script
 
-| Code | Status  |
-|------|---------|
-| 0    | ok      |
-| 125  | skipped |
-| *    | FAILED  |
-
-Note: these are defined in [`test/GNUmakefile`](https://github.com/proot-me/proot/blob/master/test/GNUmakefile#L91).
-
-## Running a Single Test
-
-To run a single test, prepend `check-` to the filename of the test you wish to run.
-
-```sh
-make -C test check-test-python01.sh # run single test
-```
-
-## Example
+Copy the following contents to `test/test-example.sh` file:
 
 ```sh
 #!/bin/sh
@@ -61,18 +45,47 @@ if [ 1 ]; then
 fi
 ```
 
-Recently, [`test/test-python01.sh`](https://github.com/proot-me/proot/blob/master/test/test-python01.sh) was added
-to test the new Python extension. It can be used as a reference for writing a new test script.
+## Running a Single Test
+
+To run a single test, prepend `check-` to the filename of the test you wish to run.
+
+```sh
+make -C test check-test-example.sh # run single test
+```
+
+## Running Entire Testsuite
+
+```sh
+make -C test
+```
+
+## Exit Codes
+
+| Code | Status  |
+|------|---------|
+| 0    | ok      |
+| 125  | skipped |
+| *    | FAILED  |
+
+Note: these are defined in [`test/GNUmakefile`](https://github.com/proot-me/proot/blob/master/test/GNUmakefile#L91).
 
 ## Troubleshooting
 
 The testsuite can be run with `V=1` for more verbose output.
+
+```sh
+make -C test check-test-example.sh V=1
+```
 
 ## Test Requirements
 
 Per the [release guide](https://github.com/proot-me/proot/blob/master/doc/howto-release.rst),
 
 > All shell scripts must pass shellcheck.
+
+```sh
+shellcheck test/check-test-example.sh
+```
 
 ### Reference
 
