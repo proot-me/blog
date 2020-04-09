@@ -46,8 +46,8 @@ if [ ! -e "${PROOT}" ]; then
 fi
 
 # Explicitly define test case here
-if [ $(file "${PROOT}" ]; then
-    exit 1
+if [ 1 ]; then
+    exit 1 # this test will fail
 fi
 ```
 
