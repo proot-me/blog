@@ -5,7 +5,7 @@ date: 2020-01-07
 
 # Recruiting new developers
 
-Community Building
+## Community Building
 
 - [x] [firstcontributions](https://github.com/firstcontributions/firstcontributions.github.io) (See: [#40](https://github.com/firstcontributions/firstcontributions.github.io/pull/40))
 
@@ -13,7 +13,7 @@ Community Building
 
 - [x] [up-for-grabs](https://github.com/up-for-grabs/up-for-grabs.net) (See: [#1200](https://github.com/up-for-grabs/up-for-grabs.net/pull/1200))
 
-Internships
+## Internships
 
 - [ ] https://www.outreachy.org/communities/cfp
 
