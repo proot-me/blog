@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Static binaries for ARM using Slackware - PRoot Development Blog</title>
+<title>Release Process - PRoot Development Blog</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="generator" content="mkdocs-1.1, mkdocs-gitbook-1.0.7">
@@ -41,10 +41,10 @@
 <a href="../ios/">PRoot on iOS</a>
 <li class="chapter" data-path="org-members/">
 <a href="../org-members/">Removing Inactive Members</a>
-<li class="chapter" data-path="releases/">
-<a href="../releases/">Release Process</a>
-<li class="chapter active" data-path="slackware-arm/">
-<a href="./">Static binaries for ARM using Slackware</a>
+<li class="chapter active" data-path="releases/">
+<a href="./">Release Process</a>
+<li class="chapter" data-path="slackware-arm/">
+<a href="../slackware-arm/">Static binaries for ARM using Slackware</a>
 <li class="chapter" data-path="writing-tests/">
 <a href="../writing-tests/">Writing Tests for PRoot / CARE</a>
 <li class="divider"></li>
@@ -83,33 +83,19 @@ Theme by GitBook
 
 
 
-<h1 id="static-binaries-for-arm-using-slackware">Static binaries for ARM using Slackware</h1>
-<p><strong>Note: This article was taken from the archived proot-static-build repository's README.md file</strong></p>
-<p>The ARM one was built on x86_64 using this command:</p>
-<pre><code class="sh"># Build PRoot/ARM statically: 
-cd ~/git/proot-static-build 
-mkdir build-arm 
-cd build-arm 
-proot -R ~/rootfs/slackwarearm-14.1 -b $(which cmake) -q qemu-arm make glibc-version=glibc-2.18 -f ../GNUmakefile proot -j4 
-</code></pre>
-
-<p>Where slackwarearm-14.1 was created this way:</p>
-<pre><code class="sh"># Get Slackware/ARM packages: 
-wget -r -np http://ftp.arm.slackware.com/slackwarearm/slackwarearm-14.1/slackware/{a,ap,d,e,l,n,tcl}/ 
-mkdir ~/rootfs/slackwarearm-14.1 
-
-# Extract only a minimal subset (ignore errors): 
-ls ftp.arm.slackware.com/slackwarearm/slackwarearm-14.1/slackware/{a,l}/*.t?z | xargs -n 1 tar -C ~/rootfs/slackwarearm-14.1 -xf 
-
-# Do a minimal post-installation setup: 
-mv ~/rootfs/slackwarearm-14.1/lib/incoming/* ~/rootfs/slackwarearm-14.1/lib/ 
-mv ~/rootfs/slackwarearm-14.1/bin/bash4.new ~/rootfs/slackwarearm-14.1/bin/bash 
-proot -q qemu-arm -r ~/rootfs/slackwarearm-14.1 /sbin/ldconfig 
-proot -q qemu-arm -r ~/rootfs/slackwarearm-14.1 ln -s /bin/bash /bin/sh 
-
-# Install all package correcty (ignore warnings): 
-ls ftp.arm.slackware.com/slackwarearm/slackwarearm-14.1/slackware/*/*.t?z | xargs -n 1 proot -q qemu-arm -S ~/rootfs/slackwarearm-14.1 -b ftp.arm.slackware.com installpkg 
-</code></pre>
+<h1 id="release-process">Release Process</h1>
+<p>The last release <a href="https://github.com/proot-me/proot/releases/tag/v5.1.0">v5.1.0</a> was from December 15, 2014, (See: <a href="timeline.md">Timeline</a>).
+We need to have more frequent releases for PRoot, so that new features can be tested.</p>
+<h2 id="next-major-release">Next Major Release</h2>
+<p>Given that this whole <a href="https://github.com/proot-me/proot/issues/106">seccomp situation</a> is a rather major change, the next version of PRoot will likely be of the <code>6.x.x</code> variant. I'll need to look into this a bit further, and check to see if this actually changes the public API.</p>
+<h2 id="pre-releases">Pre-Releases</h2>
+<p>It would be good to publish pre-releases so that users can test any new features or changes.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://guides.github.com/activities/citable-code">Making Your Code Citable</a></li>
+<li><a href="http://catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html">Release Early, Release Often</a></li>
+<li><a href="https://semver.org">Semantic Versioning</a></li>
+</ul>
 
 
 </section>
