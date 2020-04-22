@@ -7,6 +7,12 @@ date: 2020-04-22
 
 ## Generating Test Scaffolding
 
+```sh
+git clone https://github.com/proot-me/proot.git
+check-gen proot
+cd proot/test
+```
+
 ### Reference
 
 - [check](https://libcheck.github.io/check)
