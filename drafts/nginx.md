@@ -7,7 +7,8 @@ date: 2020-04-25
 
 ## Rootfs
 
-[previous post on Alpine](../posts/alpine-aarch64.md)
+Using almost the same setup as [previous post](../posts/alpine-aarch64.md),
+except for x86_64 instead of aarch64, which does not require QEMU.
 
 LXC unprivileged configuration directory
 
@@ -32,6 +33,8 @@ Port 8080
 
 Git error with ca-certificates
 
+See: [Cannot compile software inside a proot environment](https://github.com/proot-me/proot/issues/191)
+
 ### Reference
 
 - [Configuring NGINX and NGINX Plus as a Web Server](https://docs.nginx.com/nginx/admin-guide/web-server/web-server)
@@ -39,7 +42,3 @@ Git error with ca-certificates
 - [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables)
 
 - [lxc.system.conf](https://linuxcontainers.org/lxc/manpages//man5/lxc.system.conf.5.html)
-
-### See Also
-
-https://github.com/proot-me/proot/issues/191
