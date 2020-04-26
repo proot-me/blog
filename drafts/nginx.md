@@ -11,6 +11,12 @@ Alpine
 
 LXC unprivileged configuration directory
 
+```sh
+mkdir -p ~/.local/var/lib/lxc/alpine
+```
+
+Source: https://github.com/lxc/lxc/blob/master/doc/lxc.system.conf#L11
+
 ## Configuration
 
 Add nginx user
@@ -27,7 +33,7 @@ https://docs.nginx.com/nginx/admin-guide/web-server/web-server
 
 https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables
 
-https://linuxcontainers.org/lxc/manpages//man5/lxc.system.conf.5.html
+- [lxc.system.conf](https://linuxcontainers.org/lxc/manpages//man5/lxc.system.conf.5.html)
 
 ### See Also
 
