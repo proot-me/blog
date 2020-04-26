@@ -25,6 +25,11 @@ rm rootfs.tar.gz
 ```sh
 proot -S . /sbin/apk add git nginx shadow
 
+proot -S . /bin/sh
+
+git clone https://github.com/proot-m
+e/proot-me.github.io.git /var/www/localhost/htdocs/
+
 useradd nginx
 
 mkdir -p /run/nginx
