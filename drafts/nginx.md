@@ -20,10 +20,10 @@ rm rootfs.tar.gz
 
 **Note: these steps were adapted from the [Static binaries for AArch64 using Alpine Linux](alpine-aarch64.md#compiling) article.**
 
-## Configuration
+## Configuring NGINX
 
 ```sh
-proot -S . /sbin/apk add git nginx shadow vim
+proot -S . /sbin/apk add git nginx shadow
 
 proot -S . /bin/sh
 
@@ -35,8 +35,13 @@ useradd nginx
 mkdir -p /run/nginx
 touch /run/nginx/nginx.pid
 
-vim /etc/nginx/conf.d/default.conf
-:%s/80/8080/g
+sed -i 's/80/8080/g' /etc/nginx/conf.d/default.conf
+```
+
+## Running NGINX
+
+```sh
+proot -S . /usr/sbin/nginx
 ```
 
 ## Troubleshooting
