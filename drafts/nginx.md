@@ -23,7 +23,7 @@ rm rootfs.tar.gz
 ## Configuration
 
 ```sh
-proot -S . /sbin/apk add nginx shadow
+proot -S . /sbin/apk add git nginx shadow
 
 useradd nginx
 
@@ -36,6 +36,14 @@ Port 8080
 ## Troubleshooting
 
 Git error with ca-certificates
+
+```sh
+Executing busybox-1.31.1-r9.trigger
+ERROR: busybox-1.31.1-r9.trigger: script exited with error 127
+Executing ca-certificates-20191127-r1.trigger
+ERROR: ca-certificates-20191127-r1.trigger: script exited with error 127
+2 errors; 26 MiB in 24 packages
+```
 
 See: [Cannot compile software inside a proot environment](https://github.com/proot-me/proot/issues/191)
 
