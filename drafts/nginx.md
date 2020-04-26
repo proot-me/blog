@@ -21,6 +21,9 @@ Source: https://github.com/lxc/lxc/blob/master/doc/lxc.system.conf#L11
 
 ```sh
 useradd nginx
+
+mkdir -p /run/nginx
+touch /run/nginx/nginx.pid
 ```
 
 Port 8080
@@ -33,7 +36,7 @@ Git error with ca-certificates
 
 https://docs.nginx.com/nginx/admin-guide/web-server/web-server
 
-https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables
+- [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables)
 
 - [lxc.system.conf](https://linuxcontainers.org/lxc/manpages//man5/lxc.system.conf.5.html)
 
