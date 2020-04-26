@@ -33,7 +33,7 @@ mkdir -p "${PROOT_DIR}/run/nginx"
 
 touch "${PROOT_DIR}/run/nginx/nginx.pid"
 
-sed -i 's/80/8080/g' "${PROOT_DIR/etc/nginx/conf.d/default.conf"
+sed -i 's/80/8080/g' "${PROOT_DIR}/etc/nginx/conf.d/default.conf"
 ```
 
 ## Running NGINX
