@@ -34,7 +34,7 @@ Git error with ca-certificates
 
 ### Reference
 
-https://docs.nginx.com/nginx/admin-guide/web-server/web-server
+- [Configuring NGINX and NGINX Plus as a Web Server](https://docs.nginx.com/nginx/admin-guide/web-server/web-server)
 
 - [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables)
 
