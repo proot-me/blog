@@ -5,18 +5,20 @@ date: 2020-04-25
 
 # Running NGINX in PRoot
 
-## Rootfs
+## Setup for Alpine Linux
 
-Using almost the same setup as [previous post](../posts/alpine-aarch64.md),
-except for x86_64 instead of aarch64, which does not require QEMU.
-
-LXC unprivileged configuration directory
+These instructions make use of the [LXC unprivileged configuration directory](https://github.com/lxc/lxc/blob/master/doc/lxc.system.conf#L11)
 
 ```sh
-mkdir -p ~/.local/var/lib/lxc/alpine
+export PROOT_ROOTFS_DIR="~/.local/var/lib/lxc/alpine"
+mkdir -p "${PROOT_ROOTFS_DIR}"
+cd "${PROOT_ROOTFS_DIR}"
+curl -o rootfs.tar.gz http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/x86_64/alpine-minirootfs-3.11.6-x86_64.tar.gz
+tar -xf rootfs.tar.gz
+rm rootfs.tar.gz
 ```
 
-Source: https://github.com/lxc/lxc/blob/master/doc/lxc.system.conf#L11
+**Note: these steps were adapted from the [Static binaries for AArch64 using Alpine Linux](alpine-aarch64.md#compiling) article.**
 
 ## Configuration
 
