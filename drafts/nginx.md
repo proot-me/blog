@@ -23,9 +23,11 @@ Git error with ca-certificates
 
 ### Reference
 
-NGINX Config File
+https://docs.nginx.com/nginx/admin-guide/web-server/web-server
 
-XDG Config Directory
+https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables
+
+https://linuxcontainers.org/lxc/manpages//man5/lxc.system.conf.5.html
 
 ### See Also
 
