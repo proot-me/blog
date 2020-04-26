@@ -10,9 +10,9 @@ date: 2020-04-25
 These instructions make use of the [LXC unprivileged configuration directory](https://github.com/lxc/lxc/blob/master/doc/lxc.system.conf#L11)
 
 ```sh
-export PROOT_ROOTFS_DIR="~/.local/var/lib/lxc/alpine"
-mkdir -p "${PROOT_ROOTFS_DIR}"
-cd "${PROOT_ROOTFS_DIR}"
+export PROOT_DIR="~/.local/var/lib/lxc/alpine"
+mkdir -p "${PROOT_DIR}"
+cd "${PROOT_DIR}"
 curl -o rootfs.tar.gz http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/x86_64/alpine-minirootfs-3.11.6-x86_64.tar.gz
 tar -xf rootfs.tar.gz
 rm rootfs.tar.gz
@@ -23,19 +23,17 @@ rm rootfs.tar.gz
 ## Configuring NGINX
 
 ```sh
-proot -S . /sbin/apk add git nginx shadow
+proot -S "${PROOT_DIR}" /sbin/apk add git nginx shadow
 
-proot -S . /bin/sh
+git clone https://github.com/proot-me/proot-me.github.io.git "${PROOT_DIR}/var/www/localhost/htdocs"
 
-git clone https://github.com/proot-m
-e/proot-me.github.io.git /var/www/localhost/htdocs/
+proot -S "${PROOT_DIR}" /usr/sbin/useradd nginx
 
-useradd nginx
+mkdir -p "${PROOT_DIR}/run/nginx"
 
-mkdir -p /run/nginx
-touch /run/nginx/nginx.pid
+touch "${PROOT_DIR}/run/nginx/nginx.pid"
 
-sed -i 's/80/8080/g' /etc/nginx/conf.d/default.conf
+sed -i 's/80/8080/g' "${PROOT_DIR/etc/nginx/conf.d/default.conf"
 ```
 
 ## Running NGINX
@@ -48,7 +46,7 @@ Note: open http://127.0.0.1:8080 in your browser to visit the site.
 
 ## Troubleshooting
 
-The following error occurred when attempting to clone the repository:
+The following error occurred when attempting to clone the repository from within proot:
 
 ```sh
 Cloning into '/var/www/localhost/htdocs'...
