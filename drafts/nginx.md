@@ -7,7 +7,7 @@ date: 2020-04-25
 
 ## Rootfs
 
-Alpine
+[previous post on Alpine](../posts/alpine-aarch64.md)
 
 LXC unprivileged configuration directory
 
@@ -19,7 +19,9 @@ Source: https://github.com/lxc/lxc/blob/master/doc/lxc.system.conf#L11
 
 ## Configuration
 
-Add nginx user
+```sh
+useradd nginx
+```
 
 Port 8080
 
