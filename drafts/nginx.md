@@ -23,6 +23,8 @@ rm rootfs.tar.gz
 ## Configuration
 
 ```sh
+proot -S . /sbin/apk add nginx shadow
+
 useradd nginx
 
 mkdir -p /run/nginx
