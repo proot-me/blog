@@ -44,6 +44,8 @@ sed -i 's/80/8080/g' /etc/nginx/conf.d/default.conf
 proot -S . /usr/sbin/nginx
 ```
 
+Note: open http://127.0.0.1:8080 in your browser to visit the site.
+
 ## Troubleshooting
 
 The following error occurred when attempting to clone the repository:
