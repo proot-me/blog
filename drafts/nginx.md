@@ -35,7 +35,12 @@ Port 8080
 
 ## Troubleshooting
 
-Git error with ca-certificates
+```sh
+Cloning into '/var/www/localhost/htdocs'...
+fatal: unable to access 'https://github.com/proot-me/proot-me.github.io.git/': error setting certificate verify locations:
+  CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+```
 
 ```sh
 Executing busybox-1.31.1-r9.trigger
