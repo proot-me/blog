@@ -23,7 +23,7 @@ rm rootfs.tar.gz
 ## Configuration
 
 ```sh
-proot -S . /sbin/apk add git nginx shadow
+proot -S . /sbin/apk add git nginx shadow vim
 
 proot -S . /bin/sh
 
