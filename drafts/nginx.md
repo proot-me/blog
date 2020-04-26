@@ -34,9 +34,10 @@ useradd nginx
 
 mkdir -p /run/nginx
 touch /run/nginx/nginx.pid
-```
 
-Port 8080
+vim /etc/nginx/conf.d/default.conf
+:%s/80/8080/g
+```
 
 ## Troubleshooting
 
