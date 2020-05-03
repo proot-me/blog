@@ -2,7 +2,7 @@
 
 Miscellaneous updates from the [PRoot team](https://raw.githubusercontent.com/proot-me/proot/master/AUTHORS).
 
-## Credits
+## Acknowledgements
 
 Blog project format inspired by [Lucas Ramage's Journal project on GitLab](https://gitlab.com/lramage/journal).
 
