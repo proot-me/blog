@@ -20,7 +20,7 @@ date: 2020-01-12
 | bsd-compat-headers | * | * |
 | bash | * | * |
 | clang | clang | clang |
-| clang-analyzer | | clang-tools-4.0 |
+| clang-analyzer | clang-analyzer | clang-tools-4.0 |
 | coreutils | * | * |
 | * | * | curl |
 | gcc | * | gcc |
@@ -34,9 +34,9 @@ date: 2020-01-12
 | make | * | make |
 | mcookie | | |
 | musl-dev | ** | |
-| python2-dev | python-devel | |
+| python3-dev | python-devel | |
 | | | sloccount |
-| | strace | strace |
+| strace | strace | strace |
 | swig | swig | swig |
 | talloc-dev | libtalloc-devel | libtalloc-dev |
 | uthash-dev | uthash-devel | uthash-dev |
