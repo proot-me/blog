@@ -41,6 +41,10 @@ date: 2020-01-12
 | talloc-dev | libtalloc-devel | libtalloc-dev |
 | uthash-dev | uthash-devel | uthash-dev |
 
+\*included by default.
+
+\**distribution specific.
+
 [alpine-ref]: https://alpinelinux.org
 [centos-ref]: https://centos.org
 [debian-ref]: https://www.debian.org
