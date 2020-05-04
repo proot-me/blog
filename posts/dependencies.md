@@ -1,3 +1,8 @@
+---
+author: Lucas Ramage
+date: 2020-01-12
+---
+
 # Dependencies
 
 ## Distributions
