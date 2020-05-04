@@ -35,7 +35,7 @@ date: 2020-01-12
 | mcookie | | |
 | musl-dev | ** | |
 | python3-dev | python-devel | |
-| | | sloccount |
+| sloccount | sloccount | sloccount |
 | strace | strace | strace |
 | swig | swig | swig |
 | talloc-dev | libtalloc-devel | libtalloc-dev |
