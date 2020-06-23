@@ -16,4 +16,4 @@ cd proot/test
 ### Reference
 
 - [check](https://libcheck.github.io/check)
-- [check-gen](gitlab.com/oxr463/check-generator)
+- [check-gen](https://gitlab.com/oxr463/check-generator)
