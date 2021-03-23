@@ -35,8 +35,8 @@
 <a href="../alpine-aarch64/">Static binaries for AArch64 using Alpine Linux</a>
 <li class="chapter" data-path="dependencies/">
 <a href="../dependencies/">Dependencies</a>
-<li class="chapter" data-path="gsoc/">
-<a href="../gsoc/">Google Summer of Code</a>
+<li class="chapter" data-path="gsoc-2020/">
+<a href="../gsoc-2020/">Google Summer of Code</a>
 <li class="chapter" data-path="ios/">
 <a href="../ios/">PRoot on iOS</a>
 <li class="chapter" data-path="org-members/">
@@ -88,15 +88,14 @@ Theme by GitBook
 <h1 id="static-binaries-for-arm-using-slackware">Static binaries for ARM using Slackware</h1>
 <p><strong>Note: This article was taken from the archived proot-static-build repository's README.md file</strong></p>
 <p>The ARM one was built on x86_64 using this command:</p>
-<pre><code class="sh"># Build PRoot/ARM statically: 
+<pre><code class="language-sh"># Build PRoot/ARM statically: 
 cd ~/git/proot-static-build 
 mkdir build-arm 
 cd build-arm 
 proot -R ~/rootfs/slackwarearm-14.1 -b $(which cmake) -q qemu-arm make glibc-version=glibc-2.18 -f ../GNUmakefile proot -j4 
 </code></pre>
-
 <p>Where slackwarearm-14.1 was created this way:</p>
-<pre><code class="sh"># Get Slackware/ARM packages: 
+<pre><code class="language-sh"># Get Slackware/ARM packages: 
 wget -r -np http://ftp.arm.slackware.com/slackwarearm/slackwarearm-14.1/slackware/{a,ap,d,e,l,n,tcl}/ 
 mkdir ~/rootfs/slackwarearm-14.1 
 

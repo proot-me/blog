@@ -35,8 +35,8 @@
 <a href="../alpine-aarch64/">Static binaries for AArch64 using Alpine Linux</a>
 <li class="chapter" data-path="dependencies/">
 <a href="../dependencies/">Dependencies</a>
-<li class="chapter" data-path="gsoc/">
-<a href="../gsoc/">Google Summer of Code</a>
+<li class="chapter" data-path="gsoc-2020/">
+<a href="../gsoc-2020/">Google Summer of Code</a>
 <li class="chapter active" data-path="ios/">
 <a href="./">PRoot on iOS</a>
 <li class="chapter" data-path="org-members/">
@@ -90,28 +90,25 @@ Theme by GitBook
 and since using Termux to run PRoot on Android works so wonderfully,
 I thought I would take a minute to document running it on iOS.</p>
 <h2 id="setup-for-alpine-linux">Setup for Alpine Linux</h2>
-<pre><code class="sh">apk add curl proot --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
+<pre><code class="language-sh">apk add curl proot --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
 mkdir alpine
 curl -o alpine/rootfs.tar.gz http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/x86/alpine-minirootfs-3.11.3-x86.tar.gz
 cd alpine
 tar -xf rootfs.tar.gz
 rm rootfs.tar.gz
 </code></pre>
-
 <p><strong>Note: these steps were adapted from the <a href="../alpine-aarch64/#compiling">Static binaries for AArch64 using Alpine Linux</a> article.</strong></p>
 <h2 id="running-proot">Running PRoot</h2>
 <p>There is a special surprise hidden below.</p>
-<pre><code class="sh">proot -S alpine
+<pre><code class="language-sh">proot -S alpine
 apk add coreutils # contains base64
 echo &quot;QXByaWwgRm9vbHMh&quot; | base64 -d ; echo
 </code></pre>
-
 <h2 id="troubleshooting">Troubleshooting</h2>
-<pre><code class="sh">proot -S alpine
+<pre><code class="language-sh">proot -S alpine
 proot info: vpid 1: terminated with signal 31
 proot warning: can't readlink '/proc/self/cwd': No such file or directory
 </code></pre>
-
 <p>See: <a href="https://github.com/proot-me/proot/issues/134">proot info: pid 19967: terminated with signal 31</a></p>
 <h3 id="reference">Reference</h3>
 <ul>

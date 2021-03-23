@@ -35,8 +35,8 @@
 <a href="../alpine-aarch64/">Static binaries for AArch64 using Alpine Linux</a>
 <li class="chapter" data-path="dependencies/">
 <a href="../dependencies/">Dependencies</a>
-<li class="chapter" data-path="gsoc/">
-<a href="../gsoc/">Google Summer of Code</a>
+<li class="chapter" data-path="gsoc-2020/">
+<a href="../gsoc-2020/">Google Summer of Code</a>
 <li class="chapter" data-path="ios/">
 <a href="../ios/">PRoot on iOS</a>
 <li class="chapter" data-path="org-members/">
@@ -97,7 +97,7 @@ Theme by GitBook
 <p>Note: if you take a peek at <a href="https://github.com/proot-me/proot/blob/master/test/GNUmakefile"><code>test/GNUmakefile</code></a>, you will see the rules for compiling test programs; however, several of these tests names are hard-coded in this file.</p>
 <h2 id="example-script">Example Script</h2>
 <p>Copy the following contents to the <code>test/test-example.sh</code> file:</p>
-<pre><code class="sh">#!/bin/sh
+<pre><code class="language-sh">#!/bin/sh
 # Test description here
 set -eu
 
@@ -118,17 +118,14 @@ if [ 1 ]; then
     exit 1 # this test will fail
 fi
 </code></pre>
-
 <h2 id="running-a-single-test">Running a Single Test</h2>
 <p>To run a single test, prepend <code>check-</code> to the filename of the test you wish to run.</p>
-<pre><code class="sh">make -C test check-test-example.sh # run single test
+<pre><code class="language-sh">make -C test check-test-example.sh # run single test
 </code></pre>
-
 <p><a href="https://asciinema.org/a/318232"><img alt="asciicast" src="https://asciinema.org/a/318232.svg" /></a></p>
 <h2 id="running-entire-testsuite">Running Entire Testsuite</h2>
-<pre><code class="sh">make -C test
+<pre><code class="language-sh">make -C test
 </code></pre>
-
 <h2 id="exit-codes">Exit Codes</h2>
 <table>
 <thead>
@@ -155,18 +152,16 @@ fi
 <p>Note: these are defined in <a href="https://github.com/proot-me/proot/blob/master/test/GNUmakefile#L91"><code>test/GNUmakefile</code></a>.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>The testsuite can be run with <code>V=1</code> for more verbose output.</p>
-<pre><code class="sh">make -C test check-test-example.sh V=1
+<pre><code class="language-sh">make -C test check-test-example.sh V=1
 </code></pre>
-
 <p><a href="https://asciinema.org/a/318233"><img alt="asciicast" src="https://asciinema.org/a/318233.svg" /></a></p>
 <h2 id="test-requirements">Test Requirements</h2>
 <p>Per the <a href="https://github.com/proot-me/proot/blob/master/doc/howto-release.rst">release guide</a>,</p>
 <blockquote>
 <p>All shell scripts must pass shellcheck.</p>
 </blockquote>
-<pre><code class="sh">shellcheck test/check-test-example.sh
+<pre><code class="language-sh">shellcheck test/check-test-example.sh
 </code></pre>
-
 <h3 id="reference">Reference</h3>
 <ul>
 <li><a href="http://tldp.org/LDP/abs/html/exitcodes.html">Appendix E. Exit Codes With Special Meanings</a></li>

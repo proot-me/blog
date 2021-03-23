@@ -35,8 +35,8 @@
 <a href="./">Static binaries for AArch64 using Alpine Linux</a>
 <li class="chapter" data-path="dependencies/">
 <a href="../dependencies/">Dependencies</a>
-<li class="chapter" data-path="gsoc/">
-<a href="../gsoc/">Google Summer of Code</a>
+<li class="chapter" data-path="gsoc-2020/">
+<a href="../gsoc-2020/">Google Summer of Code</a>
 <li class="chapter" data-path="ios/">
 <a href="../ios/">PRoot on iOS</a>
 <li class="chapter" data-path="org-members/">
@@ -92,7 +92,7 @@ Theme by GitBook
 --<cite>@MarekPetr</cite></p>
 </blockquote>
 <h2 id="compiling">Compiling</h2>
-<pre><code class="sh"># Extract aarch64 rootfs
+<pre><code class="language-sh"># Extract aarch64 rootfs
 mkdir alpine
 cd alpine
 wget http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/aarch64/alpine-minirootfs-3.11.3-aarch64.tar.gz
@@ -125,15 +125,13 @@ proot -q qemu-aarch64 \
                                talloc-static \
                                uthash-dev
 </code></pre>
-
 <p><strong>Note: these packages are listed in the <a href="../dependencies/">Dependencies</a> article.</strong></p>
 <pre><code># Clone proot repository to rootfs
 mkdir -p alpine/usr/src/
 git clone https://github.com/proot-me/proot.git alpine/usr/src/proot
 </code></pre>
-
 <p><strong>Note: this step was performed from the host, not from within the Alpine rootfs</strong></p>
-<pre><code class="sh"># Compile loader
+<pre><code class="language-sh"># Compile loader
 proot -q qemu-aarch64 \
       -S alpine/ /bin/sh -c 'LDFLAGS=&quot;${LDFLAGS} -static -L/usr/lib/python2.7/config/&quot; make -C /usr/src/proot/src loader.elf build.h'
 
@@ -144,7 +142,6 @@ proot -q qemu-aarch64 \
 cp alpine/usr/src/proot/src/proot .
 file proot
 </code></pre>
-
 <h3 id="reference">Reference</h3>
 <ul>
 <li><a href="https://stackoverflow.com/a/21647591/8507637">https://stackoverflow.com/a/21647591/8507637</a></li>
