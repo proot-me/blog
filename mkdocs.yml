@@ -8,5 +8,6 @@ docs_dir: posts
 
 plugins:
   - autolinks
+  - git-authors
 
 repo_url: https://github.com/proot-me/blog.git
