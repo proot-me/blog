@@ -1,5 +1,6 @@
 site_name: PRoot Development Blog
 site_author: Lucas Ramage
+site_url: https://proot-me.github.io/blog
 
 theme:
   name: gitbook
