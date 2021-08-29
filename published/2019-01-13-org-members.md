@@ -3,7 +3,7 @@ author: Lucas Ramage
 date: 2019-01-13
 ---
 
-# Removing Inactive Members
+# January 2019 - Removing Inactive Members
 
 There are currently nine members of the [proot-me organization on GitHub](https://github.com/proot-me).
 However, many of these are no longer active here, or even elsewhere judging by their profiles.

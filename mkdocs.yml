@@ -5,10 +5,28 @@ site_url: https://proot-me.github.io/blog
 theme:
   name: gitbook
 
-docs_dir: posts
+docs_dir: published
 
 plugins:
   - autolinks
   - git-authors
 
 repo_url: https://github.com/proot-me/blog.git
+
+nav:
+  - Home: index.md
+  - News:
+    - 2021-02-05-gsoc.md
+    - 2020-03-31-developer-update.md
+    - 2020-01-13-gsoc.md
+    - 2019-01-13-org-members.md
+  - Guides:
+    - alpine-aarch64.md
+    - slackware-arm.md
+    - ish-on-ios.md
+    - writing-tests.md
+  - Project Information:
+    - Dependencies: dependencies.md
+    - Releases: releases.md
+    - Timeline: timeline.md
+
