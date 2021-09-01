@@ -9,7 +9,7 @@ date: 2019-01-09
 
 **Nov. 3, 2016** - New maintainers step up to continue development of PRoot, (See: [proot-me/proot#106](https://github.com/proot-me/proot/issues/106)).
 
-**Jun. 16, 2017** - Development stagnates due to frozen PRs, (See: [proot-me/proot#122](https://github.com/proot-me/proot/issues/122)).
+**Jun. 16, 2017** - Development stagnates due to stale PRs, (See: [proot-me/proot#122](https://github.com/proot-me/proot/issues/122)).
 
 **Oct. 1, 2017** - New release requested, (See: [proot-me/proot#127](https://github.com/proot-me/proot/issues/127)).
 
