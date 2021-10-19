@@ -27,6 +27,7 @@ nav:
     - writing-tests.md
   - Project Information:
     - Dependencies: dependencies.md
+    - Recruiting: recruiting.md
     - Releases: releases.md
     - Timeline: timeline.md
 
