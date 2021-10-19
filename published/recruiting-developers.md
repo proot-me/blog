@@ -3,7 +3,7 @@ author: Lucas Ramage
 date: 2020-01-07
 ---
 
-# Recruiting new developers
+# Recruiting New Developers
 
 ## Community Building
 
