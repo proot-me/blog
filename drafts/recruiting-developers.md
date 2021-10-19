@@ -17,4 +17,4 @@ date: 2020-01-07
 
 - [ ] https://www.outreachy.org/communities/cfp
 
-- [ ] https://summerofcode.withgoogle.com/get-started
+- [x] https://summerofcode.withgoogle.com/get-started
