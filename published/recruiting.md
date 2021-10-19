@@ -7,12 +7,19 @@ date: 2021-10-19
 
 ## Community Building
 
-- [x] [firstcontributions](https://github.com/firstcontributions/firstcontributions.github.io) (See: [#40](https://github.com/firstcontributions/firstcontributions.github.io/pull/40))
-
-- [x] [up-for-grabs](https://github.com/up-for-grabs/up-for-grabs.net) (See: [#1200](https://github.com/up-for-grabs/up-for-grabs.net/pull/1200))
+| Site                | Label |
+| ------------------- | ----- |
+| [firstcontributions](https://github.com/firstcontributions/firstcontributions.github.io) | N/A |
+| [up-for-grabs](https://github.com/up-for-grabs/up-for-grabs.net) | help wanted |
 
 ## Internships
 
-- [ ] https://www.outreachy.org/communities/cfp
+| Organization          | Status    | Year |
+| --------------------- | --------- | ---- |
+| Outreachy             | Planned   | 2022 |
+| Google Summer of Code | Completed | 2021 |
 
-- [x] [Google Summer of Code](https://summerofcode.withgoogle.com/get-started) (See: [GSoC 2021](https://github.com/proot-me/blog/blob/master/published/2021-02-05-gsoc.md))
+### Reference
+
+- [Call for Outreachy Community Participation](https://www.outreachy.org/communities/cfp)
+- [Google Summer of Code 2021](https://github.com/proot-me/blog/blob/master/published/2021-02-05-gsoc.md)
