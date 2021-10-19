@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>PRoot on iOS - PRoot Development Blog</title>
+<title>Recruiting - PRoot Development Blog</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="generator" content="mkdocs-1.2.3, mkdocs-gitbook-1.0.7">
@@ -58,7 +58,7 @@
 </li>
 
 <li>
-<a href="./" class="active">PRoot on iOS</a>
+<a href="../ish-on-ios/" class="">PRoot on iOS</a>
 </li>
 
 <li>
@@ -72,7 +72,7 @@
 </li>
 
 <li>
-<a href="../recruiting/" class="">Recruiting</a>
+<a href="./" class="active">Recruiting</a>
 </li>
 
 <li>
@@ -119,36 +119,52 @@ Theme by GitBook
 
 
 
-<h1 id="proot-on-ios">PRoot on iOS</h1>
-<p>Since running PRoot on macOS has been requested multiple times, (See: <a href="https://github.com/proot-me/proot/issues/81">#81</a>, <a href="https://github.com/proot-me/proot/issues/155">#155</a>);
-and since using Termux to run PRoot on Android works so wonderfully,
-I thought I would take a minute to document running it on iOS.</p>
-<h2 id="setup-for-alpine-linux">Setup for Alpine Linux</h2>
-<pre><code class="language-sh">apk add curl proot --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
-mkdir alpine
-curl -o alpine/rootfs.tar.gz http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/x86/alpine-minirootfs-3.11.3-x86.tar.gz
-cd alpine
-tar -xf rootfs.tar.gz
-rm rootfs.tar.gz
-</code></pre>
-<p><strong>Note: these steps were adapted from the <a href="../alpine-aarch64/#compiling">Static binaries for AArch64 using Alpine Linux</a> article.</strong></p>
-<h2 id="running-proot">Running PRoot</h2>
-<p>There is a special surprise hidden below.</p>
-<pre><code class="language-sh">proot -S alpine
-apk add coreutils # contains base64
-echo &quot;QXByaWwgRm9vbHMh&quot; | base64 -d ; echo
-</code></pre>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<pre><code class="language-sh">proot -S alpine
-proot info: vpid 1: terminated with signal 31
-proot warning: can't readlink '/proc/self/cwd': No such file or directory
-</code></pre>
-<p>See: <a href="https://github.com/proot-me/proot/issues/134">proot info: pid 19967: terminated with signal 31</a></p>
+<h1 id="recruiting-new-developers">Recruiting New Developers</h1>
+<h2 id="community-building">Community Building</h2>
+<table>
+<thead>
+<tr>
+<th>Site</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/firstcontributions/firstcontributions.github.io">firstcontributions</a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="https://github.com/up-for-grabs/up-for-grabs.net">up-for-grabs</a></td>
+<td>help wanted</td>
+</tr>
+</tbody>
+</table>
+<h2 id="internships">Internships</h2>
+<table>
+<thead>
+<tr>
+<th>Organization</th>
+<th>Status</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outreachy</td>
+<td>Planned</td>
+<td>2022</td>
+</tr>
+<tr>
+<td>Google Summer of Code</td>
+<td>Completed</td>
+<td>2021</td>
+</tr>
+</tbody>
+</table>
 <h3 id="reference">Reference</h3>
 <ul>
-<li><a href="https://alpinelinux.org">Alpine Linux</a></li>
-<li><a href="https://ish.app">iSH</a></li>
-<li><a href="https://wiki.termux.com/wiki/PRoot">PRoot - Termux Wiki</a></li>
+<li><a href="https://www.outreachy.org/communities/cfp">Call for Outreachy Community Participation</a></li>
+<li><a href="https://github.com/proot-me/blog/blob/master/published/2021-02-05-gsoc.md">Google Summer of Code 2021</a></li>
 </ul>
 
 
