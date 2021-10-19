@@ -17,4 +17,4 @@ date: 2020-01-07
 
 - [ ] https://www.outreachy.org/communities/cfp
 
-- [x] https://summerofcode.withgoogle.com/get-started
+- [x] [Google Summer of Code](https://summerofcode.withgoogle.com/get-started) (See: [GSoC 2021](https://github.com/proot-me/blog/blob/master/published/2021-02-05-gsoc.md))
