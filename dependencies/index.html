@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Dependencies - PRoot Development Blog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="generator" content="mkdocs-1.2.3, mkdocs-gitbook-1.0.7">
+<meta name="author" content="Lucas Ramage">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../css/style.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href=".." target="_blank" class="custom-link">PRoot Development Blog</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="..">Home</a>
+<li class="header">News</li>
+
+<li>
+<a href="../2021-02-05-gsoc/" class="">Google Summer of Code 2021</a>
+</li>
+
+<li>
+<a href="../2020-03-31-developer-update/" class="">March 2020 - Developer Update</a>
+</li>
+
+<li>
+<a href="../2020-01-13-gsoc/" class="">Google Summer of Code 2020</a>
+</li>
+
+<li>
+<a href="../2019-01-13-org-members/" class="">January 2019 - Removing Inactive Members</a>
+</li>
+
+<li class="header">Guides</li>
+
+<li>
+<a href="../alpine-aarch64/" class="">Static binaries for AArch64 using Alpine Linux</a>
+</li>
+
+<li>
+<a href="../slackware-arm/" class="">Static binaries for ARM using Slackware</a>
+</li>
+
+<li>
+<a href="../ish-on-ios/" class="">PRoot on iOS</a>
+</li>
+
+<li>
+<a href="../writing-tests/" class="">Writing Tests for PRoot / CARE</a>
+</li>
+
+<li class="header">Project Information</li>
+
+<li>
+<a href="./" class="active">Dependencies</a>
+</li>
+
+<li>
+<a href="../recruiting/" class="">Recruiting</a>
+</li>
+
+<li>
+<a href="../releases/" class="">Releases</a>
+</li>
+
+<li>
+<a href="../timeline/" class="">Timeline</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="dependencies">Dependencies</h1>
+<h2 id="distributions">Distributions</h2>
+<table>
+<thead>
+<tr>
+<th>Distribution</th>
+<th>Release</th>
+<th>Kernel Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alpine</td>
+<td>3.10</td>
+<td>4.19.53</td>
+</tr>
+<tr>
+<td>CentOS</td>
+<td>7</td>
+<td>3.10.0-1062</td>
+</tr>
+<tr>
+<td>Debian</td>
+<td>9.12</td>
+<td>4.9.210-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="packages">Packages</h2>
+<table>
+<thead>
+<tr>
+<th>Alpine</th>
+<th>CentOS</th>
+<th>Debian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsd-compat-headers</td>
+<td>*</td>
+<td>*</td>
+</tr>
+<tr>
+<td>bash</td>
+<td>*</td>
+<td>*</td>
+</tr>
+<tr>
+<td>clang</td>
+<td>clang</td>
+<td>clang</td>
+</tr>
+<tr>
+<td>clang-analyzer</td>
+<td>clang-analyzer</td>
+<td>clang-tools-4.0</td>
+</tr>
+<tr>
+<td>coreutils</td>
+<td>*</td>
+<td>*</td>
+</tr>
+<tr>
+<td>*</td>
+<td>*</td>
+<td>curl</td>
+</tr>
+<tr>
+<td>gcc</td>
+<td>*</td>
+<td>gcc</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>gdb</td>
+</tr>
+<tr>
+<td>git</td>
+<td>git</td>
+<td>git</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>*</td>
+<td>*</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>lcov</td>
+</tr>
+<tr>
+<td>libarchive-dev</td>
+<td>libarchive-devel</td>
+<td>libarchive-dev</td>
+</tr>
+<tr>
+<td>linux-headers</td>
+<td>*</td>
+<td>*</td>
+</tr>
+<tr>
+<td>lzo</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>make</td>
+<td>*</td>
+<td>make</td>
+</tr>
+<tr>
+<td>mcookie</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>musl-dev</td>
+<td>**</td>
+<td></td>
+</tr>
+<tr>
+<td>python3-dev</td>
+<td>python-devel</td>
+<td></td>
+</tr>
+<tr>
+<td>sloccount</td>
+<td>sloccount</td>
+<td>sloccount</td>
+</tr>
+<tr>
+<td>strace</td>
+<td>strace</td>
+<td>strace</td>
+</tr>
+<tr>
+<td>swig</td>
+<td>swig</td>
+<td>swig</td>
+</tr>
+<tr>
+<td>talloc-dev</td>
+<td>libtalloc-devel</td>
+<td>libtalloc-dev</td>
+</tr>
+<tr>
+<td>uthash-dev</td>
+<td>uthash-devel</td>
+<td>uthash-dev</td>
+</tr>
+</tbody>
+</table>
+<p>*included by default.</p>
+<p>**distribution specific.</p>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../js/main.js"></script>
+<script src="../js/gitbook.min.js"></script>
+<script src="../js/theme.min.js"></script>
+</body>
+</html>
