@@ -38,6 +38,7 @@ proot -q qemu-aarch64 \
                                git \
                                grep \
                                libarchive-dev \
+                               libarchive-static \
                                linux-headers \
                                lzo \
                                make \
