@@ -168,11 +168,11 @@ git clone https://github.com/proot-me/proot.git alpine/usr/src/proot
 <p><strong>Note: this step was performed from the host, not from within the Alpine rootfs</strong></p>
 <pre><code class="language-sh"># Compile loader
 proot -q qemu-aarch64 \
-      -S alpine/ /bin/sh -c 'LDFLAGS=&quot;${LDFLAGS} -static -L/usr/lib/python2.7/config/&quot; make -C /usr/src/proot/src loader.elf build.h'
+      -S alpine/ /bin/sh -c 'LDFLAGS=&quot;${LDFLAGS} -static -ltalloc&quot; make -C /usr/src/proot/src loader.elf build.h'
 
 # Compile static proot
 proot -q qemu-aarch64 \
-      -S alpine/ /bin/sh -c 'LDFLAGS=&quot;${LDFLAGS} -static -L/usr/lib/python2.7/config/&quot; make -C /usr/src/proot/src proot'
+      -S alpine/ /bin/sh -c 'LDFLAGS=&quot;${LDFLAGS} -static -ltalloc&quot; make -C /usr/src/proot/src proot'
 
 cp alpine/usr/src/proot/src/proot .
 file proot
