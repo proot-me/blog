@@ -3,7 +3,7 @@ author: Lucas Ramage
 date: 2020-02-27
 architecture: aarch64
 distribution: alpine
-distribution_version: 3.11.3
+distribution_version: 3.15.0
 ---
 
 # Static binaries for AArch64 using Alpine Linux
@@ -11,7 +11,7 @@ distribution_version: 3.11.3
 Regarding [Static binaries for ARM using Slackware](slackware-arm.md),
 
 > I have tried to build it using slackware, but it seems to be for arm32 instead of 64. Furthermore there are some errors with reg.c file - missing members of structures mainly. I have even tried to build it in termux, but this resolves in "No rule to make target ".check_process_vm.o". I got the idea of building it using android toolchains, but I guess that wont work either, since proot is detecting the architecture it is built on. What would you suggest?
-> --<cite>@MarekPetr</cite>
+> <cite>@MarekPetr</cite>
 
 ## Compiling
 
@@ -19,13 +19,10 @@ Regarding [Static binaries for ARM using Slackware](slackware-arm.md),
 # Extract aarch64 rootfs
 mkdir alpine
 cd alpine
-wget http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/aarch64/alpine-minirootfs-3.11.3-aarch64.tar.gz
-tar -xf alpine-minirootfs-3.11.3-aarch64.tar.gz
-rm alpine-minirootfs-3.11.3-aarch64.tar.gz
+wget https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-minirootfs-3.15.0-aarch64.tar.gz
+tar -xf alpine-minirootfs-3.15.0-aarch64.tar.gz
+rm alpine-minirootfs-3.15.0-aarch64.tar.gz
 cd ..
-
-# Configure DNS resolution
-cp /etc/resolv.conf alpine/etc/
 
 # Fetching dependencies
 proot -q qemu-aarch64 \
