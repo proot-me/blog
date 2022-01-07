@@ -64,11 +64,11 @@ git clone https://github.com/proot-me/proot.git alpine/usr/src/proot
 ```sh
 # Compile loader
 proot -q qemu-aarch64 \
-      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static -L/usr/lib/python2.7/config/" make -C /usr/src/proot/src loader.elf build.h'
+      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static -ltalloc" make -C /usr/src/proot/src loader.elf build.h'
 
 # Compile static proot
 proot -q qemu-aarch64 \
-      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static -L/usr/lib/python2.7/config/" make -C /usr/src/proot/src proot'
+      -S alpine/ /bin/sh -c 'LDFLAGS="${LDFLAGS} -static -ltalloc" make -C /usr/src/proot/src proot'
 
 cp alpine/usr/src/proot/src/proot .
 file proot
