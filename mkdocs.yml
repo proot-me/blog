@@ -16,6 +16,7 @@ repo_url: https://github.com/proot-me/blog.git
 nav:
   - Home: index.md
   - News:
+    - 2023-01-27-survey.md
     - 2021-02-05-gsoc.md
     - 2020-03-31-developer-update.md
     - 2020-01-13-gsoc.md
