@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Dependencies - PRoot Development Blog</title>
+<title>PRoot v5.4.1 - PRoot Development Blog</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
@@ -32,7 +32,7 @@
 <li class="header">News</li>
 
 <li>
-<a href="../2026-09-09-v5.4.1-release/" class="">PRoot v5.4.1</a>
+<a href="./" class="active">PRoot v5.4.1</a>
 </li>
 
 <li>
@@ -76,7 +76,7 @@
 <li class="header">Project Information</li>
 
 <li>
-<a href="./" class="active">Dependencies</a>
+<a href="../dependencies/" class="">Dependencies</a>
 </li>
 
 <li>
@@ -127,163 +127,26 @@ Theme by GitBook
 
 
 
-<h1 id="dependencies">Dependencies</h1>
-<h2 id="distributions">Distributions</h2>
-<table>
-<thead>
-<tr>
-<th>Distribution</th>
-<th>Release</th>
-<th>Kernel Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alpine</td>
-<td>3.10</td>
-<td>4.19.53</td>
-</tr>
-<tr>
-<td>CentOS</td>
-<td>7</td>
-<td>3.10.0-1062</td>
-</tr>
-<tr>
-<td>Debian</td>
-<td>9.12</td>
-<td>4.9.210-1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="packages">Packages</h2>
-<table>
-<thead>
-<tr>
-<th>Alpine</th>
-<th>CentOS</th>
-<th>Debian</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>bsd-compat-headers</td>
-<td>*</td>
-<td>*</td>
-</tr>
-<tr>
-<td>bash</td>
-<td>*</td>
-<td>*</td>
-</tr>
-<tr>
-<td>clang</td>
-<td>clang</td>
-<td>clang</td>
-</tr>
-<tr>
-<td>clang-analyzer</td>
-<td>clang-analyzer</td>
-<td>clang-tools-4.0</td>
-</tr>
-<tr>
-<td>coreutils</td>
-<td>*</td>
-<td>*</td>
-</tr>
-<tr>
-<td>*</td>
-<td>*</td>
-<td>curl</td>
-</tr>
-<tr>
-<td>gcc</td>
-<td>*</td>
-<td>gcc</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>gdb</td>
-</tr>
-<tr>
-<td>git</td>
-<td>git</td>
-<td>git</td>
-</tr>
-<tr>
-<td>grep</td>
-<td>*</td>
-<td>*</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>lcov</td>
-</tr>
-<tr>
-<td>libarchive-dev</td>
-<td>libarchive-devel</td>
-<td>libarchive-dev</td>
-</tr>
-<tr>
-<td>linux-headers</td>
-<td>*</td>
-<td>*</td>
-</tr>
-<tr>
-<td>lzo</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>make</td>
-<td>*</td>
-<td>make</td>
-</tr>
-<tr>
-<td>mcookie</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>musl-dev</td>
-<td>**</td>
-<td></td>
-</tr>
-<tr>
-<td>python3-dev</td>
-<td>python-devel</td>
-<td></td>
-</tr>
-<tr>
-<td>sloccount</td>
-<td>sloccount</td>
-<td>sloccount</td>
-</tr>
-<tr>
-<td>strace</td>
-<td>strace</td>
-<td>strace</td>
-</tr>
-<tr>
-<td>swig</td>
-<td>swig</td>
-<td>swig</td>
-</tr>
-<tr>
-<td>talloc-dev</td>
-<td>libtalloc-devel</td>
-<td>libtalloc-dev</td>
-</tr>
-<tr>
-<td>uthash-dev</td>
-<td>uthash-devel</td>
-<td>uthash-dev</td>
-</tr>
-</tbody>
-</table>
-<p>*included by default.</p>
-<p>**distribution specific.</p>
+<h1 id="proot-v541">PRoot v5.4.1</h1>
+<p>PRoot v5.4.1 shipped earlier this week, with <a href="https://codeql.github.com">CodeQL</a>, <a href="https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart">Dependabot</a>, and <a href="https://www.sonarsource.com/products/sonarqube/cloud">SonarCloud</a> configured to catch security issues earlier in the SDLC, <a href="https://lwn.net/Articles/792628"><code>clone3()</code></a> syscall support, and a fix for a bad <a href="https://www.man7.org/linux/man-pages/man2/readlink.2.html"><code>readlinkat()</code></a> call that could abort an entire session.</p>
+<p>Here's what you need to know:</p>
+<ul>
+<li>
+<p><a href="https://codeql.github.com">CodeQL</a> and <a href="https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart">Dependabot</a> are now enabled on the repository, and <a href="https://www.sonarsource.com/products/sonarqube/cloud">SonarCloud</a> was configured for automatic PR analysis, to catch security issues sooner.</p>
+</li>
+<li>
+<p>PRoot now recognizes the <a href="https://lwn.net/Articles/792628"><code>clone3()</code></a> syscall, which newer versions of glibc use instead of <a href="https://www.man7.org/linux/man-pages/man2/clone.2.html"><code>clone()</code></a> to create processes and threads.</p>
+</li>
+<li>
+<p>Fixed a bug where a bad <a href="https://www.man7.org/linux/man-pages/man2/readlink.2.html"><code>readlinkat()</code></a> call could abort the entire PRoot session, halting every process running under it instead of just the one that triggered the error.</p>
+</li>
+</ul>
+<p>You can find out more about the release here: <a href="https://github.com/proot-me/proot/releases/tag/v5.4.1">v5.4.1 release notes</a>.</p>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://github.com/proot-me/proot/releases/tag/v5.4.1">v5.4.1 release notes</a></li>
+<li><a href="https://github.com/proot-me/proot/blob/master/CHANGELOG.rst">Full changelog</a></li>
+</ul>
 
 
 </section>
