@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>PRoot Usage Survey 2023 - PRoot Development Blog</title>
+<title>PRoot v5.5.0 - PRoot Development Blog</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
@@ -32,7 +32,7 @@
 <li class="header">News</li>
 
 <li>
-<a href="../2026-10-06-v5.5.0-release/" class="">PRoot v5.5.0</a>
+<a href="./" class="active">PRoot v5.5.0</a>
 </li>
 
 <li>
@@ -40,7 +40,7 @@
 </li>
 
 <li>
-<a href="./" class="active">PRoot Usage Survey 2023</a>
+<a href="../2023-01-27-survey/" class="">PRoot Usage Survey 2023</a>
 </li>
 
 <li>
@@ -131,8 +131,32 @@ Theme by GitBook
 
 
 
-<h1 id="proot-usage-survey-2023">PRoot Usage Survey 2023</h1>
-<p>Please consider taking the survey: <a href="https://www.surveymonkey.com/r/7GVXS7W">https://www.surveymonkey.com/r/7GVXS7W</a></p>
+<h1 id="proot-v550">PRoot v5.5.0</h1>
+<p>PRoot v5.5.0 shipped last week, with an overhaul of the test suite, <a href="https://www.man7.org/linux/man-pages/man2/fchmodat2.2.html"><code>fchmodat2()</code></a> syscall support, and fixes for three real compatibility bugs that show up on newer Linux distros using rust-based toolchains.</p>
+<p>Here's what you need to know:</p>
+<ul>
+<li>
+<p>The test suite got a substantial overhaul. A <a href="https://github.com/bats-core/bats-core">Bats</a>-based black-box suite now runs the same test files as a conformance check against both PRoot and <a href="https://github.com/proot-me/proot-rs">proot-rs</a>. A new <a href="https://libcheck.github.io/check">libcheck</a>-based layer unit-tests PRoot's internal functions directly, instead of only being reachable through a full traced process. And the 122 test files that used to have opaque hash names, like <code>test-5bed7141.c</code>, were renamed to names that describe what they actually test.</p>
+</li>
+<li>
+<p>PRoot now recognizes the <a href="https://www.man7.org/linux/man-pages/man2/fchmodat2.2.html"><code>fchmodat2()</code></a> syscall added in Linux 6.6 so <code>fchmodat()</code> callers could pass <code>AT_SYMLINK_NOFOLLOW</code>, which started being used in glibc 2.39 a few years ago.</p>
+</li>
+<li>
+<p>Fixed a bug where PRoot reported the loader's own name instead of the traced program's through <code>AT_EXECFN</code>. This broke <a href="https://github.com/uutils/coreutils">uutils</a>, the Rust rewrite of GNU coreutils that Ubuntu 25.10 and newer ship by default, since it uses <code>AT_EXECFN</code> to figure out which command it was invoked as.</p>
+</li>
+<li>
+<p>Fixed <a href="https://www.man7.org/linux/man-pages/man2/readlink.2.html"><code>readlink(2)</code></a> silently truncating its result and reporting the wrong guest path whenever the host-side target was longer than the caller's buffer.</p>
+</li>
+<li>
+<p>Fixed <code>PR_GET_NO_NEW_PRIVS</code> reporting PRoot's own <code>no_new_privs</code> flag instead of the traced program's. PRoot sets that flag on itself to install its seccomp filter, but the kernel can't tell the difference between PRoot asking and the traced program asking, so the program used to get PRoot's answer. This broke <a href="https://github.com/trifectatechfoundation/sudo-rs"><code>sudo-rs</code></a>, Ubuntu 26.04's default <code>sudo</code>, which refuses to run once it sees the flag set.</p>
+</li>
+</ul>
+<p>You can find out more about the release here: <a href="https://github.com/proot-me/proot/releases/tag/v5.5.0">v5.5.0 release notes</a>.</p>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://github.com/proot-me/proot/releases/tag/v5.5.0">v5.5.0 release notes</a></li>
+<li><a href="https://github.com/proot-me/proot/blob/master/CHANGELOG.rst">Full changelog</a></li>
+</ul>
 
 
 </section>
